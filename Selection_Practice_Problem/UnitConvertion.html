@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit conversion</title>
+</head>
+<body>
+    <p id="Unit">Unit convertion</p>
+    <button type="button" onclick="firstOperation()">Feet to Inch</button>
+    <button type="button" onclick="secondOperation()">Feet to Meter</button>
+    <button type="button" onclick="thirdOperation()">Inch to Feet</button>
+    <button type="button" onclick="fourthOperation()">Meter to Feet</button>
+    <script>
+        function firstOperation() {
+            const a = prompt("Enter Feet:");
+            const result = Number.parseFloat(a)*12;
+            document.write(a+" feet = "+result+" inch");
+        }
+        function secondOperation() {
+            const a = prompt("Enter Feet:");
+            const result = Number.parseFloat(a)*0.3048;
+            document.write(a+" feet = "+result+" meter");
+        }function thirdOperation() {
+            const a = prompt("Enter Inch:");
+            const result = Number.parseFloat(a)*0.08;
+            document.write(a+" inch = "+result+" feet");
+        }function fourthOperation() {
+            const a = prompt("Enter Meter:");
+            const result = Number.parseFloat(a)*3.28;
+            document.write(a+" feet = "+result+" meter");
+        }
+    </script>
+</body>
+</html>
