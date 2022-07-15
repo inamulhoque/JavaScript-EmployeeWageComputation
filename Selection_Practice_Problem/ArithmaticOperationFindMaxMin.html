@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmatic operation and find Max and Min</title>
+</head>
+<body>
+    <p id="math">Arithmatic operation</p>
+    <button type="button" onclick="firstOperation()">a+b*c</button>
+    <button type="button" onclick="secondOperation()">a%b+c</button>
+    <button type="button" onclick="thirdOperation()">c+a/b</button>
+    <button type="button" onclick="fourthOperation()">a*b+c</button>
+    <script>
+        function firstOperation() {
+            const a = prompt("Enter a:");
+            const b = prompt("Enter b:");
+            const c = prompt("Enter c:");
+            const result = Number.parseInt(a)+Number.parseInt(b)*Number.parseInt(c);
+            document.write(result);
+        }
+        function secondOperation() {
+            const a = prompt("Enter a:");
+            const b = prompt("Enter b:");
+            const c = prompt("Enter c:");
+            const result = Number.parseInt(a)%Number.parseInt(b)+Number.parseInt(c);
+            document.write(result);
+        }function thirdOperation() {
+            const a = prompt("Enter a:");
+            const b = prompt("Enter b:");
+            const c = prompt("Enter c:");
+            const result = Number.parseInt(c)+Number.parseInt(a)/Number.parseInt(b);
+            document.write(result);
+        }function fourthOperation() {
+            const a = prompt("Enter a:");
+            const b = prompt("Enter b:");
+            const c = prompt("Enter c:");
+            const result = Number.parseInt(a)*Number.parseInt(b)+Number.parseInt(c);
+            document.write(result);
+        }
+    </script>
+</body>
+</html>
