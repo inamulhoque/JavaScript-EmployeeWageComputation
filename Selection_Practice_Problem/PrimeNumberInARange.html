@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime number in a range</title>
+</head>
+<body>
+    <script>
+        const initial = prompt("Enter lower interval: ");
+        const ending = prompt("Enter upper interval: ");
+        document.write("Prime number between "+initial+" and "+ending+" are: ");
+        for(let i=initial; i<=ending; i++){
+            let flag = 0;
+            for(j=2; j<i; j++){
+                if (i%j==0) {
+                    flag=1;
+                    break;
+                }
+            }
+            if (i>1 && flag==0) {
+                document.write(i+" ");
+            }    
+        }
+    </script>
+</body>
+</html>
